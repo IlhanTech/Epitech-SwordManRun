@@ -1,0 +1,42 @@
+111111111111111111111111
+111111111111111111111111
+111111111111111111111111
+111111111111111111111111
+111111111111111111111111
+111111111111111111111111
+111111111111111111111111
+111211111111111111111111
+
+
+typedef struct block_struct {
+    sprite
+    texture
+    int type
+    float x
+    float y
+} block_t;
+
+block_t **blocks;
+
+blocks = malloc(sizeof(block_t *) * NOMBRE_DE_LIGNE_DANS_TON_FICHIER)
+for (i = 0; i < NOMBRE_DE_LIGNE_DANS_TON_FICHIER; i++)
+    blocks[i] = malloc(block_t * NOMBRE_DE_COLONNE_DANS_TON_FICHIER)
+
+fonction pour attribuer les positions
+
+
+sprite_dirt = sprite create
+texture dirt = texture dirt
+sf sprite set texture;
+for (i .... NOMBRE_DE_LIGNE_DANS_TON_FICHIER i++)
+    for (j .... NOMBRE_DE_COLONNE_DANS_TON_FICHIER j++)
+        if (array_int[i][j] == 1)
+            blocks[i][j]->sprite = sprite dirt
+            blocks[i][j]->type = 1
+        blocks[i][j]->x = i * 50;
+        blocks[i][j]->y = j * 50;
+
+move_position_x_blocks
+for (i .... NOMBRE_DE_LIGNE_DANS_TON_FICHIER i++)
+    for (j .... NOMBRE_DE_COLONNE_DANS_TON_FICHIER j++)
+        sfdisplay blocks[i][j]->sprite
